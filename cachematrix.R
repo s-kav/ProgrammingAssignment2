@@ -30,8 +30,6 @@ makeCacheMatrix <- function(x = matrix()) {
              getInvers = getInvers)
 }
 
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
 cacheSolve <- function(makeCacheMatrix.object, ...) {
         MM.local <- makeCacheMatrix.object$getInvers()
 ## to attempt to retrieve an inverse matrix from the object passed in as the argument to this function
