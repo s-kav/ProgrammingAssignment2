@@ -42,5 +42,5 @@ cacheSolve <- function(makeCacheMatrix.object, ...) {
         MM.local.calculated <- inv(data, ...)
 ## to calculate an inverse matrix, uses "setInvers" function as the input object
         makeCacheMatrix.object$setInvers(MM.local.calculated)
-        MM.local.calculated # return the mean value
+        MM.local.calculated # return the value of inverse matrix
 }
